@@ -73,9 +73,23 @@ function generatePassword() {
     return null;
   }
 
-// Loop through each index in the generated password, and generate a random character based on the user's selection
+  // Generate the password with at least one character from each selected character type. This is done to ensure the generated password includes at least one character of each type selected 
   let password = '';
-  for (let i = 0; i < options.length; i++) {
+  if (options.useLowercase) {
+    password += getRandom(possibleLowerCasedCharacters);
+  }
+  if (options.useUppercase) {
+    password += getRandom(possibleUpperCasedCharacters);
+  }
+  if (options.useNumbers) {
+    password += getRandom(possibleNumericCharacters);
+  }
+  if (options.useSpecial) {
+    password += getRandom(possibleSpecialCharacters);
+  }
+
+  // Loop through each remaining index in the generated password and generate a random character based on the user's selection 
+  for (let i = password.length; i < options.length; i++) {
     const randomChar = getRandom(allChars);
     password += randomChar;
   }
@@ -83,10 +97,10 @@ function generatePassword() {
   return password;
 }
 
-// Create a reference to the "Generate Password" button
+  // Create a reference to the "Generate Password" button
 var generateBtn = document.querySelector('#generate');
 
-// Write the generated password to the page, inside the placeholder box (dashed outline) 
+  // Write the generated password to the page, inside the placeholder box (dashed outline) 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
@@ -94,5 +108,5 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Listen for clicks to the "Generate Password" button
+  // Listen for clicks to the "Generate Password" button
 generateBtn.addEventListener('click', writePassword);
