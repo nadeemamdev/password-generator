@@ -15,7 +15,9 @@ Note: I am currently on the Front End Web Developer course.
 
 1. [Click this link to visit the site on Github pages](https://nadeemamdev.github.io/password-generator/)
 
-2. [Open the Console in your Web Browser](https://balsamiq.com/support/faqs/browserconsole/#:~:text=To%20open%20the%20developer%20console,(on%20Windows%2FLinux).) to view the output.
+2. Click the red "Generate Password" button and follow the on-screen dialogs to generate a password that meets your requirements.
+
+3. The password generated will display on the screen insde the box with the dashed outline. 
 
 Screenshot of Live Site/Console Application:
 
