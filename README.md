@@ -13,6 +13,8 @@ Note: I am currently on the Front End Web Developer course.
 
 ## Usage
 
+**This website is for use on Desktop only**
+
 1. [Click this link to visit the applicaton on Github pages](https://nadeemamdev.github.io/password-generator/)
 
 2. Click the red "Generate Password" button and follow the on-screen dialogs to generate a password that meets your requirements.
