@@ -40,4 +40,3 @@ Screenshots of Live Site/Console Application:
 ## License
 
 This is a private project and therefore no License has been provided.
-# password-generator
